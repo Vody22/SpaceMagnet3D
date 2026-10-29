@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Space Magnet 3D</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="vignette"></div>
+    <div id="hud">
+      <div id="top">
+        <div class="panel" id="money-panel"><span class="label">CREDITS</span><span id="money">$0</span></div>
+        <div class="panel" id="cargo-panel">
+          <span class="label">CARGO <span id="cargo-value"></span></span>
+          <div id="cargo-bar"><div id="cargo-fill"></div><span id="cargo-text">0 / 15</span></div>
+        </div>
+        <div class="panel small" id="best-panel"><span class="label">BEST HAUL</span><span id="best">$0</span></div>
+        <div class="panel small" id="rank-panel">
+          <span class="label">RANK <span id="rank-bonus"></span></span>
+          <span id="rank-title">Rookie</span>
+          <div id="rank-bar"><div id="rank-fill"></div></div>
+        </div>
+        <button id="mute" aria-label="Toggle sound">🔊</button>
+        <button id="settings-btn" aria-label="Settings">⚙</button>
+      </div>
+      <div id="zone"></div>
+      <div id="objectives" class="panel"><span class="label">OBJECTIVES</span><ul class="list"></ul></div>
+      <div id="threats"></div>
+      <div id="banner"></div>
+      <div id="hint">
+        <b>Fly into debris to magnetize it</b>
+        <span class="desk">WASD / Arrows or hold the mouse to fly · Space to dash</span>
+        <span class="touch">Drag anywhere to fly · tap DASH to burst</span>
+        <span>Bring your haul back to the <i>green base</i> to sell &amp; upgrade</span>
+      </div>
+      <div id="home-arrow"><div class="tri"></div><span id="home-dist"></span></div>
+      <div id="shop">
+        <div class="title">UPGRADES <small>docked · keys 1-5</small></div>
+        <div class="cards"></div>
+      </div>
+      <div id="popups"></div>
+      <div id="fps"></div>
+      <div id="coins"></div>
+      <div id="combo"></div>
+      <div id="settings" hidden>
+        <div class="row"><span>Sound</span><button id="set-sound">ON</button></div>
+        <div class="row"><span>Music</span><button id="set-music">ON</button></div>
+        <div class="row"><span>Graphics</span><button id="set-quality">AUTO</button></div>
+        <div class="keys"><b>Move</b> WASD / arrows / hold mouse / drag<br /><b>Dash</b> Space / right click / pad A<br /><b>Buy</b> 1-5 at base · <b>Mute</b> M</div>
+      </div>
+      <button id="dash-btn" aria-label="Dash">DASH</button>
+    </div>
+    <div id="joystick"><div class="knob"></div></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

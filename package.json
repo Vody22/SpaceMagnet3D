@@ -1,0 +1,24 @@
+{
+  "name": "space-magnet-3d",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:e2e": "node scripts/e2e.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  },
+  "type": "module",
+  "private": true
+}
